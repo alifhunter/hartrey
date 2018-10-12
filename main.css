@@ -1,0 +1,344 @@
+/* Hartrey Vcard v1 */
+/* by alifhunter 
+/* Radio tabs by Pete R. 
+/* starts */
+/* -- RESET STYLES -- */
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
+table { border-collapse:collapse; border-spacing:0 }
+fieldset, img { border:0 }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal }
+ol, ul, li { list-style:none }
+caption, th { text-align:left }
+h1, h2, h3, h4, h5, h6 {font-weight:normal;padding-bottom:10px;}
+q:before, q:after { content:''}
+strong { font-weight: bold }
+em { font-style: italic }
+.italic { font-style: italic }
+.aligncenter { display:block; margin:0 auto; }
+.alignleft { float:left; margin:10px; }
+.alignright { float:right;margin:10px; }
+.no-margin{margin:0px;}
+.no-bottom{margin-bottom:0px;}
+.no-padding{padding:0px;}
+.margin-t{margin-top:25px;}
+div { position:relative } 
+a{text-decoration:none;color:#0073B2;}
+a:hover{text-decoration:none;}
+a:active,a:focus{outline: none;}
+/* -- Default Set --*/
+body {
+	margin:auto;
+	padding:auto;
+	background:#eeeeee url(assets/topbg.png) fixed; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #eeeeee 0%, #eeeeee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#eeeeee), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg, #eeeeee 0%,#eeeeee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg, #eeeeee 0%,#eeeeee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #eeeeee 0%,#eeeeee 100%); /* IE10+ */
+    background: linear-gradient(45deg, #eeeeee 0%,#eeeeee 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	font-family: "Open Sans",sans-serif;
+	font-size:13px;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* -- Main container -- */
+.container {
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+	width:900px;
+	height:510px;
+	background: #3f4c6b; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #3f4c6b 0%, #3f4c6b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#3f4c6b), color-stop(100%,#3f4c6b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #3f4c6b 0%,#3f4c6b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #3f4c6b 0%,#3f4c6b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #3f4c6b 0%,#3f4c6b 100%); /* IE10+ */
+    background: linear-gradient(135deg, #3f4c6b 0%,#3f4c6b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	border-radius: 5px;
+}
+/* -- The left container -- */
+.container .leftbox {
+    width:200px;
+    height:500px;   
+    float:left;
+    padding: 5px;
+    text-align: center;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+.container .leftbox .name {
+	font-size:20px;
+	color:#fff;
+	margin:10px 0;
+}
+.container .leftbox .smallname {
+	color:#eee;
+	font-size: 15px;
+	font-style: italic;
+	font-weight: 600;
+	margin: 0 0 10px;
+}
+.container .leftbox .picbox {
+		border-radius:5px;
+    	width:170px;
+    	height: auto;
+    	margin:auto;
+    	margin-top: 5px;
+}
+.container .leftbox .big {
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size:18px;
+	text-align: left;
+	margin-left:15px;
+	color:white;
+}
+/* Creepy social button */
+.container .leftbox a {
+position: relative;
+margin-right: auto;
+margin-left: auto;
+color: #ffffff;
+text-decoration: none;
+font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+display: block;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+width: 170px;
+text-align: center;
+padding-top: 10px;
+-webkit-transform: translate(0, 0);
+-moz-transform: translate(0, 0);
+transform: translate(0, 0);
+ 
+-webkit-transition: all .2s ease;
+-moz-transition: all .2s ease;
+-ms-transition: all .2s ease;
+-o-transition: all .2s ease;
+transition: all .2s ease;
+ 
+height:30px;
+cursor:pointer;
+overflow:hidden;
+}
+.container .leftbox a:hover {
+	text-decoration: none;
+}
+ 
+.container .leftbox a:active {
+-webkit-transform: translate(0, 3px);
+-moz-transform: translate(0, 3px);
+transform: translate(0, 3px);
+}
+
+.container .leftbox a.twitter-small{background:#2CA9E1 url("assets/twitter.png") no-repeat center center;}
+.container .leftbox a.twitter-big{background:#2CA9E1;}
+
+.container .leftbox a.twitter-small:active, a.twitter-big:active{ -webkit-box-shadow: 0px 2px 0px #2695BC;
+    
+}
+
+.container .leftbox a.twitter-big:before{background: url("assets/twitter.png") no-repeat center center;
+content:"";
+width:30px;
+height:30px;
+position:absolute;
+left:10px;
+top:18%;
+}
+
+.container .leftbox a.facebook-small{background:#3B5997 url("assets/facebook.png") no-repeat center center;}
+.container .leftbox a.facebook-big{background:#3B5997;}
+
+.container .leftbox a.facebook-small:active, a.facebook-big:active{ -webkit-box-shadow: 0px 2px 0px #293F63;
+    
+}
+
+.container .leftbox a.facebook-big:before{background: url("assets/facebook.png") no-repeat center center;
+content:"";
+width:30px;
+height:30px;
+position:absolute;
+left:10px;
+top:18%;
+}
+
+}
+.container .leftbox a.gplus-small{background:#353631 url("assets/gplus.png") no-repeat center center;}
+.container .leftbox a.gplus-big{background:#353631;}
+.container .leftbox a.gplus-small:active, a.gplus-big:active{ -webkit-box-shadow: 0px 2px 0px #141412;
+    
+}
+.container .leftbox a.gplus-big:before{background: url("assets/gplus.png") no-repeat center center;
+content:"";
+width:30px;
+height:30px;
+position:absolute;
+left:10px;
+top:18%;
+}
+/* -- The Right container -- */
+.container .rightbox {
+	width:680px;
+	height:500px;
+	background: #08C;
+	float:right;
+	padding: 5px;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;\
+}
+/* tabs */
+.container .rightbox .tabs input[type=radio] {
+	          position: absolute;
+	          top: -9999px;
+	          left: -9999px;
+	      }
+	      .container .rightbox .tabs {
+	        width: 600px;
+	        list-style: none;
+	        position: relative;
+	        padding: 0;
+	      }
+	      .container .rightbox .tabs li{
+	        float: left;
+	      }
+	      .container .rightbox .tabs label {
+	          display: block;
+	          padding: 10px 20px;
+	          color: #08C;
+	          font-size: 24px;
+	          font-weight: normal;
+	          font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	          background: rgba(255,255,255,0.2);
+	          cursor: pointer;
+	          position: relative;
+	          
+	          -webkit-transition: all 0.2s ease-in-out;
+	          -moz-transition: all 0.2s ease-in-out;
+	          -o-transition: all 0.2s ease-in-out;
+	          transition: all 0.2s ease-in-out;
+	      }
+	      .container .rightbox .tabs label:hover {
+	        background: rgba(255,255,255,0.5);
+	        top: 0;
+	      }
+	      
+	      .container .rightbox [id^=tab]:checked + label {
+	        background: #08C;
+	        color: white;
+	        top: 0;
+	      }
+	      
+	      .container .rightbox [id^=tab]:checked ~ [id^=tab-content] {
+	          display: block;
+	      }
+	      .container .rightbox .tab-content{
+	        z-index: 3;
+	        display: none;
+	        text-align: left;
+	        width: 100%;
+	        font-size: 20px;
+	        line-height: 140%;
+	        padding-top: 10px;
+	        background: #08C;
+	        padding: 10px;
+	        color: white;
+	        position: absolute;
+	        top: 53px;
+	        left: 0;
+	        box-sizing: border-box;
+	        -webkit-animation-duration: 0.5s;
+	        -o-animation-duration: 0.5s;
+	        -moz-animation-duration: 0.5s;
+	        animation-duration: 0.5s;
+	      }
+/* Untuk content CONTACTT */
+.boxContact {
+    width:250px;
+    float:right;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+}
+.forInput {
+	padding: 5px;
+	margin: 5px;
+	height: auto;
+	width: 100%;
+	background: rgba(255,255,255,0.2);
+    color: rgba(255, 255, 255, 0.85);
+    border:0px;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-size: 14px;
+}
+}
+.forTextArea {
+    height: 200px;
+}
+.forButton {
+	padding: 5px;
+	margin:5px;
+	border:0px;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	float:left;
+	background: rgba(255,255,255,0.2);
+    color: rgba(255, 255, 255, 0.85);
+    cursor:pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.forButton:hover {
+    background: rgba(255,255,255,0.5);
+}
+.boxContact2 {
+	float:left;
+	width:250px;
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-size: 14px;
+}
+.boxContact2 p {
+	margin-bottom: 10px;
+}
+.a {
+	border: 1px solid black;
+}
+#imagetop {
+position:relative;
+}
+#imagetop img {
+	position:absolute;
+	top:0px;
+	background-repeat: repeat-x;
+	width:100% ;
+}
+#galleryImg {
+	margin:12%;
+	margin-left: 7%;
+    position:absolute;
+    float:left;
+    width:250px;
+    height:250px;
+overflow: hidden;
+  
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+}
+#grow img {
+
+   height:250px;
+   width:250px;
+   -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+#grow img:hover {
+	 width: 400px;
+     height: 400px;
+}
